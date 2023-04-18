@@ -1,0 +1,21 @@
+/* Defina as propriedades de estilo para o corpo da página */
+body {
+  background-color: #F8F8F8;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho da página */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+
+/* Estilo para a imagem do QR Code */
+img {
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_home.css') }}">
+</head>
+<body>
+    <h1>Bem-vindo ao Sistema de Gerenciamento Acadêmico</h1>
+    <p>Este sistema permite que você verifique sua presença nas aulas por meio de QR Codes gerados pelo professor.</p>
+    <p>Para começar, selecione uma opção abaixo:</p>
+    <ul>
+        <li><a href="{{ url_for('generate_qr_code', date=today_date, subject=subject_name) }}">Gerar QR Code para aula</a></li>
+        <li><a href="{{ url_for('check_presence') }}">Verificar presença em aula</a></li>
+    </ul>
+</body>
+</html>

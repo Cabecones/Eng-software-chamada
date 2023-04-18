@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Verificação de Presença</title>
+    <link rel="stylesheet" type="text/css" href="style_presence.css">
+</head>
+<body>
+    <h1>Verificação de Presença</h1>
+    <p>Data: {{ lesson.date }}</p>
+    <p>Assunto: {{ lesson.subject }}</p>
+    <form action="{{ url_for('check_presence') }}" method="POST">
+        <label for="registration">Matrícula:</label>
+        <input type="text" id="registration" name="registration">
+        <input type="hidden" id="lesson" name="lesson" value="{{ lesson.date }}|{{ lesson.subject }}">
+        <button type="submit">Verificar Presença</button>
+    </form>
+</body>
+</html>
